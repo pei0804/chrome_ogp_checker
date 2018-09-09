@@ -1,56 +1,38 @@
 <!doctype html>
 <html>
 <head>
-  <title>ogp</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <style>
-    body {
-      font-size: 82%;
-      color: #333333;
-      width: 600px;
-      background-color: #f9e4eb;
-    }
-
-    h1, h2, h3 {
-      margin: 0;
-      padding: 0;
-      font-size: 100%;
-    }
-
-    h1 {
-      font-size: 120%;
-      margin-bottom: 0.4em;
-    }
-
-    h2 {
-      margin-bottom: 0.4em;
-    }
-
-    p {
-      margin: 0 0 1em 0;
-    }
-
-    #wrapper {
-      padding: 1em;
-      background-color: #ffffff;
-      border-radius: 7px;
-    }
-  </style>
-  <script src="jquery.min.js"></script>
-  <script src="popup.js"></script>
+    <title>ogp</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery.min.js"></script>
+    <script src="popup.js"></script>
 
 </head>
 <body>
-<div id="wrapper">
-  <h2>OGP:title</h2>
-  <p><span id="ogp_title"></span></p>
-  <h2>OGP:url</h2>
-  <p><span id="ogp_url"></span></p>
-  <p><a href="https://developers.facebook.com/tools/debug/" target="_blank">facebook debug tool</a></p>
-  <h2>OGP:image</h2>
-  <p><span id="ogp_image"></span></p>
-  <h2>OGP:description</h2>
-  <p><span id="ogp_description"></span></p>
+<div class="container-fluid">
+    <h1 id="status"></h1>
+    <table class="table table-bordered">
+        <tr>
+            <th id="ogp_type_key">og:type</th>
+            <td id="ogp_type"></td>
+        </tr>
+        <tr>
+            <th id="ogp_url_key">og:url</th>
+            <td id="ogp_url"></td>
+        </tr>
+        <tr>
+            <th id="ogp_title_key">og:title</th>
+            <td id="ogp_title"></td>
+        </tr>
+        <tr>
+            <th id="ogp_image_key">og:image</th>
+            <td id="ogp_image"></td>
+        </tr>
+        <tr>
+            <th id="ogp_description_key">og:description</th>
+            <td id="ogp_description"></td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>
