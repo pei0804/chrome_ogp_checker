@@ -6,6 +6,11 @@ $(function () {
   var ogp_url = bg.ogp_url;
   var ogp_image = bg.ogp_image;
   var ogp_description = bg.ogp_description;
+  var need_refresh = bg.need_refresh;
+
+  if (need_refresh) {
+    $('#status').append('再読込してください');
+  }
 
   // 文字列を配列にする
   String.prototype.toArray = function () {

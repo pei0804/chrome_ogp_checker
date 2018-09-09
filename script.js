@@ -30,11 +30,4 @@ function getPageInformation() {
     status: "start"
   });
 
-  port.onMessage.addListener(function (msg) {
-    if (msg.status == "loading") {
-      port.postMessage({
-        status: "loading"
-      });
-    }
-  });
 }
