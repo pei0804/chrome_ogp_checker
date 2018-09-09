@@ -10,6 +10,8 @@ $(function () {
 
   if (need_refresh) {
     $('#status').append('再読込してください');
+    $('#contents').remove();
+    return;
   }
 
   // 文字列を配列にする
