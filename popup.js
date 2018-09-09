@@ -27,7 +27,7 @@ $(function () {
 
   function warn(target) {
     cleanClass(target);
-    $(target).addClass('alert-warn');
+    $(target).addClass('alert-warning');
   }
 
   function ng(target) {
