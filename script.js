@@ -19,18 +19,7 @@ function getPageInformation()
   var ogp_url          = $("meta[property='og:url']").attr("content");
   var ogp_image        = $("meta[property='og:image']").attr("content");
   var ogp_description  = $("meta[property='og:description']").attr("content");
-  var site_description = $("meta[name='description'], meta[name='Description']").attr("content");
-  var site_keywords    = $("meta[name='keywords'], meta[name='Keywords']").attr("content");
-  var link_canonical   = $("link[rel='canonical']").attr("href");
-  var link_next        = $("link[rel='next']").attr("href");
-  var link_prev        = $("link[rel='prev']").attr("href");
-  var site_title       = window.document.title;
-  var site_h1          = '';
   var ogp_image_width  = 0;
-
-  $("h1").each(function(){
-    site_h1 += '<h3>site:h1</h3><p>' + $(this).html() + '</p>';
-  });
 
   port.postMessage({
     ogp_title: ogp_title,
@@ -38,13 +27,6 @@ function getPageInformation()
     ogp_image: ogp_image,
     ogp_image_width: ogp_image_width,
     ogp_description: ogp_description,
-    link_canonical: link_canonical,
-    link_next: link_next,
-    link_prev: link_prev,
-    site_title: site_title,
-    site_h1: site_h1,
-    site_keywords: site_keywords,
-    site_description: site_description,
     status:"start"
   });
 
