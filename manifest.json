@@ -1,6 +1,6 @@
 {
-  "name": "OGP_Checker",
-  "short_name" : "OGP_Checker",
+  "name": "OG",
+  "short_name" : "OG",
   "version" : "0.0.1",
   "manifest_version": 2,
   "description": "ogがいけてるかチェックするやつ",
